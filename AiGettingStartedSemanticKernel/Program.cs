@@ -1,5 +1,4 @@
 ﻿using AiGettingStartedSemanticKernel;
-using Json.More;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.SemanticKernel;
@@ -26,7 +25,7 @@ var chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
 
 
 // ---2. Simple prompt invocation---
-/*var result = await kernel.InvokePromptAsync("Give me a list of weekly household tasks");
+var result = await kernel.InvokePromptAsync("Give me a list of weekly household tasks");
 Console.WriteLine(result.ToString());
 
 
@@ -106,7 +105,7 @@ while (true)
         history.AddAssistantMessage(chunk.ToString());
         Console.WriteLine(chunk);
     }
-}*/
+}
 
 
 // ---6. Using a plugin---
@@ -155,7 +154,7 @@ while (true)
         kernel
     );
 
-    foreach (var chunk in result6)
+    foreach (var chunk in result7)
     {
         history2.AddAssistantMessage(chunk.ToString());
         Console.WriteLine(chunk);
