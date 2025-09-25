@@ -1,13 +1,13 @@
 {
     "inputs": [],
     "servers": {
-        "LT Photos": {
+        "Simpsons API": {
             "type": "stdio",
             "command": "dotnet",
             "args": [
                 "run",
                 "--project",
-                "src\\LT.McpShowcase.Server\\LT.McpShowcase.Server.csproj"
+                "AiGettingStartedSemanticKernel.McpServer\\AiGettingStartedSemanticKernel.McpServer.csproj"
             ]
         }
     }
