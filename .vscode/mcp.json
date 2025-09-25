@@ -1,0 +1,14 @@
+{
+    "inputs": [],
+    "servers": {
+        "LT Photos": {
+            "type": "stdio",
+            "command": "dotnet",
+            "args": [
+                "run",
+                "--project",
+                "src\\LT.McpShowcase.Server\\LT.McpShowcase.Server.csproj"
+            ]
+        }
+    }
+}

@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGettingStartedSemanticKernel", "AiGettingStartedSemanticKernel\AiGettingStartedSemanticKernel.csproj", "{DA582966-859A-414E-85A9-DE63260F541C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGettingStartedSemanticKernel.McpClient", "AiGettingStartedSemanticKernel.McpClient\AiGettingStartedSemanticKernel.McpClient.csproj", "{FD15AE3C-9000-4148-9329-FF6036A96A76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiGettingStartedSemanticKernel.McpServer", "AiGettingStartedSemanticKernel.McpServer\AiGettingStartedSemanticKernel.McpServer.csproj", "{A90F0429-9091-466E-AE8A-11547684EE31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{DA582966-859A-414E-85A9-DE63260F541C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA582966-859A-414E-85A9-DE63260F541C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA582966-859A-414E-85A9-DE63260F541C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD15AE3C-9000-4148-9329-FF6036A96A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD15AE3C-9000-4148-9329-FF6036A96A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD15AE3C-9000-4148-9329-FF6036A96A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD15AE3C-9000-4148-9329-FF6036A96A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90F0429-9091-466E-AE8A-11547684EE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90F0429-9091-466E-AE8A-11547684EE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90F0429-9091-466E-AE8A-11547684EE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90F0429-9091-466E-AE8A-11547684EE31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
