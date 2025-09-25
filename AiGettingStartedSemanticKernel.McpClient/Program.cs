@@ -1,4 +1,4 @@
-﻿﻿using Microsoft.SemanticKernel;
+﻿using Microsoft.SemanticKernel;
 using ModelContextProtocol.Client;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -23,8 +23,8 @@ var clientTransport = new StdioClientTransport(new StdioClientTransportOptions
 var mcpClient = await McpClientFactory.CreateAsync(clientTransport);
 
 // List the tools in the MCP client
-var tools = await mcpClient.ListToolsAsync();
-foreach (var tool in tools)
+var simpsonsTools = await mcpClient.ListToolsAsync();
+foreach (var tool in simpsonsTools)
 {
     Console.WriteLine($"- {tool.Name}: {tool.Description}");
 }
@@ -44,14 +44,14 @@ foreach (var tool in ghTools)
 }
 
 // 1. Example usage: call the get_photo tool manually
-var getPhotoTool = tools.FirstOrDefault(t => t.Name == "get_simpsons_character");
-var photoResult = await mcpClient.CallToolAsync(
-    getPhotoTool!.Name,
+var getCharacterTool = simpsonsTools.FirstOrDefault(t => t.Name == "get_simpsons_character");
+var characterResult = await mcpClient.CallToolAsync(
+    getCharacterTool!.Name,
     new Dictionary<string, object?> { ["characterId"] = 5 }
 );
 
 // 2. Real-world usage with the kernel: let the LLM decide when to call tools
-var kernel = BuildKernel(tools);
+var kernel = BuildKernel(simpsonsTools);
 var settings = new OpenAIPromptExecutionSettings
 {
     FunctionChoiceBehavior = FunctionChoiceBehavior.Auto()
